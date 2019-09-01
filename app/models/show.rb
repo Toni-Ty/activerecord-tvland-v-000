@@ -4,7 +4,6 @@ class Show < ActiveRecord::Base
   belongs_to :network
 end
 
-def actors_list
-  self.actors.map {|actor| actor.full_name}
+  def actors_list
+    self.actors.map {|actor| actor.full_name}
   end
-end
