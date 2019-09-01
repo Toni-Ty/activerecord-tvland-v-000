@@ -7,7 +7,7 @@ def full_name
   name = "#{self.first_name}, #{self.last_name}"
 end
 
-# def list_roles
-#   roles_list
-#   character_array = self.characters.map { |character| character.name}
-# end
+def list_roles
+characters.collect do |character|
+  "#{character.name} - #{character.show.name}"
+end
