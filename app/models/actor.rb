@@ -10,4 +10,5 @@ end
 def list_roles
 characters.collect do |character|
   "#{character.name} - #{character.show.name}"
+  end
 end
